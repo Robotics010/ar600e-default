@@ -1,3 +1,3 @@
 # ar600e-default
-AR-600E Humanoid Robot Open Source Project. AR-600E has default hardware and firmware without any modifications.
+Проект антропоморфного робота AR-600E с открытым исходным. Гуманоидный робот AR-600E используется с неизмененным оборудованием и оригинальным программным обеспечением, за исключением ПО на компьюетере разработчика с Ubuntu.
 *Read this in other languages: [Russian](README.md), [English](README.en.md)
