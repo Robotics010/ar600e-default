@@ -1,0 +1,5 @@
+Поменять путь к stl-файлам в urdf
+
+src/ar600-start/src/arbot_model_pkg/urdf/ARbot_v2.urdf
+
+заменить Vladimir на свое имя пользователя

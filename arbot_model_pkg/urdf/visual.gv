@@ -1,0 +1,137 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"sh_bedro_l" [label="sh_bedro_l"];
+"sh_bedro1_l" [label="sh_bedro1_l"];
+"kr_bedro_l" [label="kr_bedro_l"];
+"bedro_l" [label="bedro_l"];
+"koleno_l" [label="koleno_l"];
+"golen_l" [label="golen_l"];
+"kr_stopa_l" [label="kr_stopa_l"];
+"stopa_l" [label="stopa_l"];
+"sh_bedro_r" [label="sh_bedro_r"];
+"sh_bedro1_r" [label="sh_bedro1_r"];
+"kr_bedro_r" [label="kr_bedro_r"];
+"bedro_r" [label="bedro_r"];
+"koleno_r" [label="koleno_r"];
+"golen_r" [label="golen_r"];
+"kr_stopa_r" [label="kr_stopa_r"];
+"stopa_r" [label="stopa_r"];
+"sh_tors" [label="sh_tors"];
+"tors" [label="tors"];
+"sh_plecho_l" [label="sh_plecho_l"];
+"plecho_l" [label="plecho_l"];
+"sh_plecho1_l" [label="sh_plecho1_l"];
+"lokot_l" [label="lokot_l"];
+"sh_lokot_l" [label="sh_lokot_l"];
+"sh_lokot1_l" [label="sh_lokot1_l"];
+"sh_predpl_l" [label="sh_predpl_l"];
+"predpl_l" [label="predpl_l"];
+"sh_kist_l" [label="sh_kist_l"];
+"kist_l" [label="kist_l"];
+"sh_plecho_r" [label="sh_plecho_r"];
+"plecho_r" [label="plecho_r"];
+"sh_plecho1_r" [label="sh_plecho1_r"];
+"lokot_r" [label="lokot_r"];
+"sh_lokot_r" [label="sh_lokot_r"];
+"sh_lokot1_r" [label="sh_lokot1_r"];
+"sh_predpl_r" [label="sh_predpl_r"];
+"predpl_r" [label="predpl_r"];
+"sh_kist_r" [label="sh_kist_r"];
+"kist_r" [label="kist_r"];
+"sh_golova_n" [label="sh_golova_n"];
+"golova_n" [label="golova_n"];
+"sh_sheya" [label="sh_sheya"];
+"sheya" [label="sheya"];
+"kr_golova" [label="kr_golova"];
+"golova" [label="golova"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "Bedro_vr_Left" [label="xyz: 0 0.088 0.7625 \nrpy: 0 -0 0"]
+"Bedro_vr_Left" -> "sh_bedro_l"
+"sh_bedro_l" -> "kr_bedro_l" [label="xyz: 0 0 -0.097 \nrpy: 0 -0 0"]
+"kr_bedro_l" -> "sh_bedro1_l"
+"sh_bedro1_l" -> "Bedro_Y_Left" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Bedro_Y_Left" -> "kr_bedro_l"
+"kr_bedro_l" -> "Bedro_X_Left" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Bedro_X_Left" -> "bedro_l"
+"bedro_l" -> "Koleno_Left" [label="xyz: 0 0 -0.28 \nrpy: 0 -0 0"]
+"Koleno_Left" -> "koleno_l"
+"koleno_l" -> "golen_l_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"golen_l_joint" -> "golen_l"
+"golen_l" -> "Stopa_X_Left" [label="xyz: 0 0 -0.28 \nrpy: 0 -0 0"]
+"Stopa_X_Left" -> "kr_stopa_l"
+"kr_stopa_l" -> "Stopa_Y_Left" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Stopa_Y_Left" -> "stopa_l"
+"base_link" -> "Bedro_vr_Right" [label="xyz: 0 -0.088 0.7625 \nrpy: 0 -0 0"]
+"Bedro_vr_Right" -> "sh_bedro_r"
+"sh_bedro_r" -> "kr_bedro_r" [label="xyz: 0 0 -0.097 \nrpy: 0 -0 0"]
+"kr_bedro_r" -> "sh_bedro1_r"
+"sh_bedro1_r" -> "Bedro_Y_Right" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Bedro_Y_Right" -> "kr_bedro_r"
+"kr_bedro_r" -> "Bedro_X_Right" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Bedro_X_Right" -> "bedro_r"
+"bedro_r" -> "Koleno_Right" [label="xyz: 0 0 -0.28 \nrpy: 0 -0 0"]
+"Koleno_Right" -> "koleno_r"
+"koleno_r" -> "golen_r_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"golen_r_joint" -> "golen_r"
+"golen_r" -> "Stopa_X_Right" [label="xyz: 0 0 -0.28 \nrpy: 0 -0 0"]
+"Stopa_X_Right" -> "kr_stopa_r"
+"kr_stopa_r" -> "Stopa_Y_Right" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Stopa_Y_Right" -> "stopa_r"
+"base_link" -> "Tors" [label="xyz: -0.0276 0 0.9325 \nrpy: -3.14159 -0 0"]
+"Tors" -> "sh_tors"
+"sh_tors" -> "tors_joint" [label="xyz: 0 0 -0.065 \nrpy: 0 -0 0"]
+"tors_joint" -> "tors"
+"tors" -> "Ruka_X_Left" [label="xyz: -0.00597029 -0.05121 -0.13 \nrpy: 0 -0 0.174533"]
+"Ruka_X_Left" -> "sh_plecho_l"
+"sh_plecho_l" -> "plecho_l_joint" [label="xyz: 0 -0.065 0 \nrpy: 0 -0 0"]
+"plecho_l_joint" -> "plecho_l"
+"plecho_l" -> "Ruka_Y_Left" [label="xyz: 0 -0.08 0 \nrpy: 3.14159 0 0"]
+"Ruka_Y_Left" -> "sh_plecho1_l"
+"sh_plecho1_l" -> "lokot_l_joint" [label="xyz: 0 0 -0.071 \nrpy: 0 -0 0"]
+"lokot_l_joint" -> "lokot_l"
+"lokot_l" -> "Lokot_vr_Left" [label="xyz: 0 0 -0.065 \nrpy: 0 -0 0"]
+"Lokot_vr_Left" -> "sh_lokot_l"
+"sh_lokot_l" -> "sh_lokot1_l_joint" [label="xyz: 0 0 -0.097 \nrpy: 0 -0 0"]
+"sh_lokot1_l_joint" -> "sh_lokot1_l"
+"sh_lokot1_l" -> "Lokot_Left" [label="xyz: 0 0 0 \nrpy: 0 -0 -3.14159"]
+"Lokot_Left" -> "sh_predpl_l"
+"sh_predpl_l" -> "predpl_l_joint" [label="xyz: 0 0 -0.071 \nrpy: 0 -0 0"]
+"predpl_l_joint" -> "predpl_l"
+"predpl_l" -> "Kist_povorot_Left" [label="xyz: 0 0 -0.065 \nrpy: 0 -0 0"]
+"Kist_povorot_Left" -> "sh_kist_l"
+"sh_kist_l" -> "kist_l_joint" [label="xyz: 0 0 0.005 \nrpy: 0 -0 0"]
+"kist_l_joint" -> "kist_l"
+"tors" -> "Ruka_X_Right" [label="xyz: 0.00641296 0.120147 -0.13 \nrpy: 3.14159 -4.10207e-10 2.96706"]
+"Ruka_X_Right" -> "sh_plecho_r"
+"sh_plecho_r" -> "plecho_r_joint" [label="xyz: 0 -0.005 0 \nrpy: 0 -0 -3.14159"]
+"plecho_r_joint" -> "plecho_r"
+"plecho_r" -> "Ruka_Y_Right" [label="xyz: 0 -0.08 0 \nrpy: 0 -0 -3.14159"]
+"Ruka_Y_Right" -> "sh_plecho1_r"
+"sh_plecho1_r" -> "lokot_r_joint" [label="xyz: 0 0 -0.071 \nrpy: 0 -0 0"]
+"lokot_r_joint" -> "lokot_r"
+"lokot_r" -> "Lokot_vr_Right" [label="xyz: 0 0 -0.065 \nrpy: 0 -0 0"]
+"Lokot_vr_Right" -> "sh_lokot_r"
+"sh_lokot_r" -> "sh_lokot1_r_joint" [label="xyz: 0 0 -0.097 \nrpy: 0 -0 0"]
+"sh_lokot1_r_joint" -> "sh_lokot1_r"
+"sh_lokot1_r" -> "Lokot_Right" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"Lokot_Right" -> "sh_predpl_r"
+"sh_predpl_r" -> "predpl_r_joint" [label="xyz: 0 0 -0.071 \nrpy: 0 -0 0"]
+"predpl_r_joint" -> "predpl_r"
+"predpl_r" -> "Kist_povorot_Right" [label="xyz: 0 0 0.005 \nrpy: -3.14159 -0 0"]
+"Kist_povorot_Right" -> "sh_kist_r"
+"sh_kist_r" -> "kist_r_joint" [label="xyz: 0 0 0.065 \nrpy: 3.14159 -0 -3.14159"]
+"kist_r_joint" -> "kist_r"
+"tors" -> "sh_golova_n_joint" [label="xyz: 0.044 0 -0.15 \nrpy: 3.14159 -4.10207e-10 4.10207e-10"]
+"sh_golova_n_joint" -> "sh_golova_n"
+"sh_golova_n" -> "Golova_naklon" [label="xyz: 0 0 0 \nrpy: 0 -1.0472 0"]
+"Golova_naklon" -> "golova_n"
+"golova_n" -> "Golova_povorot" [label="xyz: 0.00866025 0 0.055 \nrpy: 0 1.0472 0"]
+"Golova_povorot" -> "sh_sheya"
+"sh_sheya" -> "sheya1_joint" [label="xyz: 0 0 0.02 \nrpy: 0 -0 0"]
+"sheya1_joint" -> "sheya"
+"sheya" -> "Golova_kachanie" [label="xyz: 0 0 0.08 \nrpy: 0 -0 -3.14159"]
+"Golova_kachanie" -> "kr_golova"
+"kr_golova" -> "Golova_kivanie_unnecessary" [label="xyz: 0 0 0 \nrpy: 0 -0 -3.14159"]
+"Golova_kivanie_unnecessary" -> "golova"
+}

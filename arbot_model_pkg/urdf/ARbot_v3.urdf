@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<robot name="AR600E">
+
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+  <material name="red">
+    <color rgba="1 0 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+     <origin rpy="0 0 0" xyz="0 0 0.8275" />
+      <geometry>
+               <mesh filename="file:///home/vladimir/catkin_ws/src/arbot_model_pkg/meshes/STL/taz.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <collision>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sh_bedro_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:///home/vladimir/catkin_ws/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+    <collision>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="Bedro_vr_Right" type="revolute">
+    <parent link="base_link"/>
+    <child link="sh_bedro_r"/>
+    <origin xyz="0 -0.088 0.7625"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.349066"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+</robot>

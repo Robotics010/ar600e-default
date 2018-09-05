@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: arbot_model_pkg
+    relative_path: urdf/ARbot_v2.urdf
+  SRDF:
+    relative_path: config/visual.srdf
+  CONFIG:
+    author_name: Vladimir
+    author_email: gglmail96@gmail.com
+    generated_timestamp: 1524291243

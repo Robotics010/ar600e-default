@@ -1,0 +1,11 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - Ruka_X_Right
+      - Ruka_Y_Right
+      - Lokot_vr_Right
+      - Lokot_Right
+      - Kist_povorot_Right
+  - name: fake_eef_controller
+    joints:
+      []

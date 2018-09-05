@@ -1,0 +1,29 @@
+In order to start ar600e_controller demo do the following.
+
+Set ROS laptop IP address as 192.168.1.3
+Set Windows PC IP address as 192.168.1.103
+Connect each other via Ethernet LAN cable directly
+
+On ROS laptop.
+in new terminal:
+roscore
+
+In a separate terminal, start the rosserial server
+rosrun rosserial_server socket_node
+
+in other terminal:
+rosrun ar600e_controller ar600e_controller.py
+
+On Windows PC.
+Open AR600E_ROS_TEST.sln via Visual Studio 2013
+Start MB600Test
+	Right-Click on MB600TEST project
+	Debug >> Start new instance
+In TEST MB600E Form Click on TCP Start button
+Go to Solution Explorer in Visual Studio
+Start ros-ar600e-connector
+	Right-Click on ros-ar600e-connector project
+	Debug >> Start new instance
+Check that l_shoulder1, l_shoulder2 and so on TextBoxes shows current arm positions
+Check that st_l_shoulder1, st_l_shoulder2 and so on TextBoxes shows setpoints of arm position
+Switch on Sending setpoints to ROBOT by clicking on SendSetpoint? checkbox

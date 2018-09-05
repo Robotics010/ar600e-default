@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<robot name="visual">
+
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+  <material name="red">
+    <color rgba="0 1 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+     <origin rpy="0 0 0" xyz="0 0 0.8275" />
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/taz.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <material name="white"/>
+
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- RIGHT LEG LINK -->
+
+  <link name="sh_bedro_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="sh_bedro1_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="kr_bedro_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="bedro_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.28"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="koleno_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="golen_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.28"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="kr_stopa_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="stopa_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.1055"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- TORS LINK -->
+
+  <link name="sh_tors">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="-3.141592654 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="tors">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/tors.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 3.141592654 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- LEFT ARM LINK -->
+
+  <link name="sh_plecho_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="plecho_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_plecho1_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="lokot_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_lokot_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="sh_lokot1_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_predpl_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="predpl_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_kist_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="kist_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- LEFT LEG LINK -->
+
+  <link name="sh_bedro_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="sh_bedro1_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="kr_bedro_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="bedro_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.28"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="koleno_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="golen_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.28"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="kr_stopa_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="stopa_l">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 -0.1055"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- RIGHT ARM LINK -->
+
+  <link name="sh_plecho_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="plecho_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_plecho1_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="lokot_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_lokot_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="sh_lokot1_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_predpl_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="predpl_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_kist_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="kist_r">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- HEAD LINK -->
+
+  <link name="sh_golova_n">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="golova_n">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golovan.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="sh_sheya">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/sheya.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="sheya">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 1.570796 1.570796" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="kr_golova">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="golova">
+    <visual>
+      <geometry>
+               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golova.stl" scale="0.001 0.001 0.001"/>       
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+
+  <joint name="sh_golova_n_joint" type="fixed">
+    <parent link="tors"/>
+    <child link="sh_golova_n"/>
+    <origin  rpy="0 3.1415926540 3.1415926540" xyz="0.044 0 -0.15"/>
+  </joint>
+
+  <joint name="Golova_naklon" type="revolute">
+    <parent link="sh_golova_n"/>
+    <child link="golova_n"/>
+    <origin  rpy="0 -1.0472 0" xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="0" upper="1.0472"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Golova_povorot" type="revolute">
+    <parent link="golova_n"/>
+    <child link="sh_sheya"/>
+    <origin  rpy="0 1.0472 0" xyz="0.008660254038 0 0.055"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="sheya1_joint" type="fixed">
+    <parent link="sh_sheya"/>
+    <child link="sheya"/>
+    <origin  rpy="0 0 0" xyz="0 0 0.02"/>
+  </joint>
+
+  <joint name="Golova_kachanie" type="revolute">
+    <parent link="sheya"/>
+    <child link="kr_golova"/>
+    <origin  rpy="0 0 3.141592654" xyz="0 0 0.08"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-0.261799" upper="0.261799"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Golova_kivanie_unnecessary" type="revolute">
+    <parent link="kr_golova"/>
+    <child link="golova"/>
+    <origin  rpy="0 0 3.141592654" xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.523599"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Tors" type="revolute">
+    <parent link="base_link"/>
+    <child link="sh_tors"/>
+    <origin rpy="3.141592654 0 0" xyz="-0.0276 0 0.9325"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="tors_joint" type="fixed">
+    <parent link="sh_tors"/>
+    <child link="tors"/>
+    <origin rpy="0 0 0" xyz="0 0 -0.065"/>
+  </joint>
+
+
+  <joint name="Ruka_X_Left" type="revolute">
+    <parent link="tors"/>
+    <child link="sh_plecho_l"/>
+    <origin  rpy="0 0 0.174533" xyz="-0.005970294761 -0.05121000316 -0.13"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-0.261799" upper="1.5707"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="plecho_l_joint" type="fixed">
+    <parent link="sh_plecho_l"/>
+    <child link="plecho_l"/>
+    <origin xyz="0 -0.065 0"/>
+  </joint>
+
+  <joint name="Ruka_Y_Left" type="revolute">
+    <parent link="plecho_l"/>
+    <child link="sh_plecho1_l"/>
+    <origin  rpy="-1.570796327 0 0" xyz="0 -0.08 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-1.570796327" upper="0.261799"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="lokot_l_joint" type="fixed">
+    <parent link="sh_plecho1_l"/>
+    <child link="lokot_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.071"/>
+  </joint>
+
+  <joint name="Lokot_vr_Left" type="revolute">
+    <parent link="lokot_l"/>
+    <child link="sh_lokot_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.065"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="sh_lokot1_l_joint" type="fixed">
+    <parent link="sh_lokot_l"/>
+    <child link="sh_lokot1_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.097"/>
+  </joint>
+
+  <joint name="Lokot_Left" type="revolute">
+    <parent link="sh_lokot1_l"/>
+    <child link="sh_predpl_l"/>
+    <origin  rpy="0 0 3.141592654" xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="0" upper="2.26893"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="predpl_l_joint" type="fixed">
+    <parent link="sh_predpl_l"/>
+    <child link="predpl_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.071"/>
+  </joint>
+
+  <joint name="Kist_povorot_Left" type="revolute">
+    <parent link="predpl_l"/>
+    <child link="sh_kist_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.065"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="kist_l_joint" type="fixed">
+    <parent link="sh_kist_l"/>
+    <child link="kist_l"/>
+    <origin  rpy="0 0 0" xyz="0 0 0.005"/>
+  </joint>
+
+
+  <joint name="Ruka_X_Right" type="revolute">
+    <parent link="tors"/>
+    <child link="sh_plecho_r"/>
+    <origin  rpy="0 3.1415926540 -0.174532925" xyz="0.00641296138 0.1201465459 -0.13"/> 
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-0.261799" upper="1.5708"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="plecho_r_joint" type="fixed">
+    <parent link="sh_plecho_r"/>
+    <child link="plecho_r"/>
+    <origin rpy="0 0 3.1415926540" xyz="0 -0.005 0"/>
+  </joint>
+
+  <joint name="Ruka_Y_Right" type="revolute">
+    <parent link="plecho_r"/>
+    <child link="sh_plecho1_r"/>
+    <origin  rpy="1.570796327 0 3.1415926540" xyz="0 -0.08 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-1.570796327" upper="0.261799"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="lokot_r_joint" type="fixed">
+    <parent link="sh_plecho1_r"/>
+    <child link="lokot_r"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.071"/>
+  </joint>
+
+  <joint name="Lokot_vr_Right" type="revolute">
+    <parent link="lokot_r"/>
+    <child link="sh_lokot_r"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.065"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="sh_lokot1_r_joint" type="fixed">
+    <parent link="sh_lokot_r"/>
+    <child link="sh_lokot1_r"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.097"/>
+  </joint>
+
+  <joint name="Lokot_Right" type="revolute">
+    <parent link="sh_lokot1_r"/>
+    <child link="sh_predpl_r"/>
+    <origin  rpy="0 0 0" xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="0" upper="2.26893"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+
+  <joint name="predpl_r_joint" type="fixed">
+    <parent link="sh_predpl_r"/>
+    <child link="predpl_r"/>
+    <origin  rpy="0 0 0" xyz="0 0 -0.071"/>
+  </joint>
+
+  <joint name="Kist_povorot_Right" type="revolute">
+    <parent link="predpl_r"/>
+    <child link="sh_kist_r"/>
+    <origin  rpy="3.1415926540 0 0" xyz="0 0 0.005"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="kist_r_joint" type="fixed">
+    <parent link="sh_kist_r"/>
+    <child link="kist_r"/>
+    <origin  rpy="-3.1415926540 0 3.1415926540" xyz="0 0 0.065"/>
+  </joint>
+
+
+  <joint name="Bedro_vr_Left" type="revolute">
+    <parent link="base_link"/>
+    <child link="sh_bedro_l"/>
+    <origin xyz="0 0.088 0.7625"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.349066"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="kr_bedro_l" type="fixed">
+    <parent link="sh_bedro_l"/>
+    <child link="sh_bedro1_l"/>
+    <origin xyz="0 0 -0.097"/>
+  </joint>
+
+  <joint name="Bedro_Y_Left" type="revolute">
+    <parent link="sh_bedro1_l"/>
+    <child link="kr_bedro_l"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-0.191986" upper="0.349066"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Bedro_X_Left" type="revolute">
+    <parent link="kr_bedro_l"/>
+    <child link="bedro_l"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-1.22173" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Koleno_Left" type="revolute">
+    <parent link="bedro_l"/>
+    <child link="koleno_l"/>
+    <origin xyz="0 0 -0.28"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="0" upper="2.44346"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="golen_l_joint" type="fixed">
+    <parent link="koleno_l"/>
+    <child link="golen_l"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <joint name="Stopa_X_Left" type="revolute">
+    <parent link="golen_l"/>
+    <child link="kr_stopa_l"/>
+    <origin xyz="0 0 -0.28"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-1.22173" upper="0.575959"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Stopa_Y_Left" type="revolute">
+    <parent link="kr_stopa_l"/>
+    <child link="stopa_l"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-0.191986" upper="0.349066"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Bedro_vr_Right" type="revolute">
+    <parent link="base_link"/>
+    <child link="sh_bedro_r"/>
+    <origin xyz="0 -0.088 0.7625"/>
+    <axis xyz="0 0 1" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.349066"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="kr_bedro_r" type="fixed">
+    <parent link="sh_bedro_r"/>
+    <child link="sh_bedro1_r"/>
+    <origin xyz="0 0 -0.097"/>
+  </joint>
+
+  <joint name="Bedro_Y_Right" type="revolute">
+    <parent link="sh_bedro1_r"/>
+    <child link="kr_bedro_r"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.191986"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Bedro_X_Right" type="revolute">
+    <parent link="kr_bedro_r"/>
+    <child link="bedro_r"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-1.22173" upper="0.785398"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Koleno_Right" type="revolute">
+    <parent link="bedro_r"/>
+    <child link="koleno_r"/>
+    <origin xyz="0 0 -0.28"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="0" upper="2.44346"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="golen_r_joint" type="fixed">
+    <parent link="koleno_r"/>
+    <child link="golen_r"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <joint name="Stopa_X_Right" type="revolute">
+    <parent link="golen_r"/>
+    <child link="kr_stopa_r"/>
+    <origin xyz="0 0 -0.28"/>
+    <axis xyz="0 1 0" />
+    <limit effort="300" velocity="0.1" lower="-1.22173" upper="0.575959"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+  <joint name="Stopa_Y_Right" type="revolute">
+    <parent link="kr_stopa_r"/>
+    <child link="stopa_r"/>
+    <origin xyz="0 0 0"/>
+    <axis xyz="1 0 0" />
+    <limit effort="300" velocity="0.1" lower="-0.349066" upper="0.191986"/>
+    <dynamics damping="50" friction="1"/>
+  </joint>
+
+</robot>
