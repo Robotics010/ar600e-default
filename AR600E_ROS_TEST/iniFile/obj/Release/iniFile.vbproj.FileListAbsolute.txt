@@ -1,0 +1,8 @@
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\bin\Release\iniFile.dll
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\bin\Release\iniFile.pdb
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\bin\Release\iniFile.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\obj\Release\iniFile.Resources.resources
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\obj\Release\iniFile.vbproj.GenerateResource.Cache
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\obj\Release\iniFile.dll
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\obj\Release\iniFile.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\iniFile\obj\Release\iniFile.pdb

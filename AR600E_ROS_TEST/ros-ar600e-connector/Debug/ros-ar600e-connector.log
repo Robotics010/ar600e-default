@@ -1,0 +1,21 @@
+﻿  TCPClient_class.cpp
+  stdafx.cpp
+  ros-ar600e-connector.cpp
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(307): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(311): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(315): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(319): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(323): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(327): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(331): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(335): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(339): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros-ar600e-connector\ros-ar600e-connector.cpp(343): warning C4244: '=': conversion from 'sensor_msgs::JointState::_position_type' to 'short', possible loss of data
+  WindowsSocket.cpp
+  time.cpp
+  duration.cpp
+c:\program files\git\ar600e-default\ar600e_ros_test\ros_lib\duration.cpp(77): warning C4244: '*=': conversion from 'double' to 'int32_t', possible loss of data
+c:\program files\git\ar600e-default\ar600e_ros_test\ros_lib\duration.cpp(78): warning C4244: '*=': conversion from 'double' to 'int32_t', possible loss of data
+  Generating Code...
+  ros-ar600e-connector.vcxproj -> C:\Program Files\Git\ar600e-default\AR600E_ROS_TEST\Debug\ros-ar600e-connector.exe
+  ros-ar600e-connector.vcxproj -> C:\Program Files\Git\ar600e-default\AR600E_ROS_TEST\Debug\ros-ar600e-connector.pdb (Full PDB)

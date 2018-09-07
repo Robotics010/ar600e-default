@@ -1,0 +1,17 @@
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600TEST.exe.config
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600TEST.exe
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600TEST.pdb
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600TEST.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\iniFile.dll
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600E.dll
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600E.pdb
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\MB600E.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\iniFile.pdb
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\bin\Release\iniFile.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.vbprojResolveAssemblyReference.cache
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.Form1.resources
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.Resources.resources
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.vbproj.GenerateResource.Cache
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.exe
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.xml
+F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600TEST\obj\Release\MB600TEST.pdb
