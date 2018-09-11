@@ -1,8 +1,0 @@
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\bin\Release\MB600E.dll
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\bin\Release\MB600E.pdb
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\bin\Release\MB600E.xml
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\obj\Release\MB600E.Resources.resources
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\obj\Release\MB600E.vbproj.GenerateResource.Cache
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\obj\Release\MB600E.dll
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\obj\Release\MB600E.xml
-F:\downloads\Новая папка (2)\Новая папка (2)\MB600TEST\MB600TEST - копия\MB600E\obj\Release\MB600E.pdb
