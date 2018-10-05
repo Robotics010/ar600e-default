@@ -2,6 +2,9 @@
 
     ' TCP Server vars
     Dim TCPServer As New TCPServer_class_type()
+    ' LOGGER USAGE
+    Dim Logger As New CSVLog_class_type(CurDir() & "\log.csv")
+
     Dim IsMessageReceived As Boolean
     Dim Receivedmessage As Message
     Dim Transmittedmessage As Message
@@ -10,6 +13,9 @@
     Dim dbg_ind As Integer
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' LOGGER USAGE
+        Logger.Log("Form1.vb", "Form1_Load", "test message 1")
+
         TCPServer.Initialization()
         Transmittedmessage.value = -5
         temp_var = 0
@@ -17,7 +23,13 @@
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        ' LOGGER USAGE
+        Logger.Log("Form1.vb", "Form1_FormClosing", "test message 2")
+
         TCPServer.Close()
+        ' LOGGER USAGE
+        Logger.Close()
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
