@@ -12,7 +12,7 @@ Module CSVLog_class
     Public Class CSVLog_class_type
         Public Sub New(ByVal pathfile As String)
             logfile = My.Computer.FileSystem.OpenTextFileWriter(pathfile, True)
-            strPC = "VB"
+            strPC = "Windows"
         End Sub
         Public Sub Log(ByVal logmodule As String, ByVal logfunction As String, ByVal logmessage As String)
             dtDateTime = DateTime.Now

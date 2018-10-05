@@ -3,7 +3,7 @@
     ' TCP Server vars
     Dim TCPServer As New TCPServer_class_type()
     ' LOGGER USAGE
-    Dim Logger As New CSVLog_class_type(CurDir() & "\log.csv")
+    Dim Logger As New CSVLog_class_type(CurDir() & "\vb_log.csv")
 
     Dim IsMessageReceived As Boolean
     Dim Receivedmessage As Message

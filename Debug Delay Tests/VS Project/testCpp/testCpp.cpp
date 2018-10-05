@@ -12,6 +12,7 @@
 #include <windows.h>
 
 #include "TCPClient_class.h"
+#include "CSVLog_class.h"
 
 char *joint_types_chars[] =
 {
@@ -41,9 +42,43 @@ void print_message(char* output, MESSAGE* message)
 	msg_count++;
 }
 
+std::string ExePath() {
+	char buffer[MAX_PATH];
+	GetModuleFileNameA(NULL, buffer, MAX_PATH);
+	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
+	return std::string(buffer).substr(0, pos);
+}
 
 int main()
 {
+
+//#include <stdio.h> 
+//
+//	struct MyData {
+//		int someValue;
+//		char const *someString;
+//		float someSample;
+//	};
+//
+//	int write_to_file(int count, struct MyData *data, char const *fileName)
+//	{
+//		FILE *f = fopen(fileName, "w");
+//		if (f == NULL) return -1;
+//		while (count-- > 0) {
+//			// you might want to check for out-of-disk-space here, too 
+//			fprintf(f, "%d,%s,%f\n", data->someValue, data->someString, data->someSample);
+//			++data;
+//		}
+//		fclose(f);
+//		return 0;
+//	}
+	
+	// LOGGER USAGE
+	//"C:\\Program Files\\Git\\ar600e-default\\Debug Delay Tests\\VS Project\\testCpp\\Debug\\cpp_log.csv",
+	std::string filepath = ExePath() + "\\cpp_log.csv";
+	CSVLog_class* CsvLogger = new CSVLog_class(filepath.c_str());
+	CsvLogger->Log("testCpp.cpp","main", "test message 3");
+	delete CsvLogger;
 
 	// TCP Client Init and Connect to WINDOWS PC
 	msg_count = 0;
