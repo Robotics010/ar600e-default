@@ -80,6 +80,7 @@ Partial Class Form1
         '
         'TCPTimer
         '
+        Me.TCPTimer.Interval = 50
         '
         'Panel7
         '

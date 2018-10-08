@@ -78,8 +78,8 @@ Module TCPServer_class
             Console.WriteLine("TCPServer:Connected!")
             Disconnect = False
             stream = client.GetStream()
-            stream.ReadTimeout = 10
-            'stream.WriteTimeout = 100
+            stream.ReadTimeout = 1
+            stream.WriteTimeout = 1
         End Sub
 
         Private Function SerializeMessageObject(ByVal msg As Message) As Byte()
@@ -131,9 +131,17 @@ Module TCPServer_class
         Public Function Write() As Boolean
             Dim Result As Boolean
             flatten_Tmessage = SerializeMessageObject(Tmessage)
-            stream.Write(flatten_Tmessage, 0, MSG_SIZE)
-            Console.WriteLine("TCPServer:Write")
-            Result = True
+
+            Try
+                stream.Write(flatten_Tmessage, 0, MSG_SIZE)
+                Console.WriteLine("TCPServer:Write")
+                Result = True
+            Catch ex As Exception
+                Result = False
+                Console.WriteLine("TCPServer:Write Failed")
+                Disconnect = False
+            End Try
+
             Return Result
         End Function
 

@@ -117,52 +117,52 @@ int main()
 			case joint::L_shoulder_1:
 				positions[0] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main","L_shoulder_1 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main","receive L_shoulder_1 position = %.3f", logvalue);
 				break;
 			case joint::L_shoulder_2:
 				positions[1] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "L_shoulder_2 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive L_shoulder_2 position = %.3f", logvalue);
 				break;
 			case joint::L_elbow_1:
 				positions[2] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "L_elbow_1 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive L_elbow_1 position = %.3f", logvalue);
 				break;
 			case joint::L_elbow_2:
 				positions[3] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "L_elbow_2 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive L_elbow_2 position = %.3f", logvalue);
 				break;
 			case joint::L_forearm:
 				positions[4] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "L_forearm position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive L_forearm position = %.3f", logvalue);
 				break;
 			case joint::R_shoulder_1:
 				positions[5] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "R_shoulder_1 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive R_shoulder_1 position = %.3f", logvalue);
 				break;
 			case joint::R_shoulder_2:
 				positions[6] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "R_shoulder_2 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive R_shoulder_2 position = %.3f", logvalue);
 				break;
 			case joint::R_elbow_1:
 				positions[7] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "R_elbow_1 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive R_elbow_1 position = %.3f", logvalue);
 				break;
 			case joint::R_elbow_2:
 				positions[8] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "R_elbow_2 position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive R_elbow_2 position = %.3f", logvalue);
 				break;
 			case joint::R_forearm:
 				positions[9] = message->value;
 				logvalue = message->value;
-				CsvLogger->Log("testCpp.cpp", "main", "R_forearm position = %.3f", logvalue);
+				CsvLogger->Log("testCpp.cpp", "main", "receive R_forearm position = %.3f", logvalue);
 				break;
 			default:
 				break;
@@ -197,8 +197,9 @@ int main()
 
 		finish = clock();
 		duration = (double)(finish - start) / CLOCKS_PER_SEC;
+		//printf("duration=%.3f", duration);
 		// Send Joint Setpoint Position to a Robot
-		if (duration > 1)
+		if (duration > 0.1)
 		{
 			start = clock();
 			for (int i = 0; i < 10; i++)
@@ -208,63 +209,63 @@ int main()
 				{
 				case joint::L_shoulder_1:
 					message_forSent->header = joint::L_shoulder_1;
-					message_forSent->value = 101;
+					message_forSent->value = samples + 1000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "L_shoulder_1 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send L_shoulder_1 setpoint=%.3f", logvalue);
 					break;
 				case joint::L_shoulder_2:
 					message_forSent->header = joint::L_shoulder_2;
-					message_forSent->value = 102;
+					message_forSent->value = samples + 2000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "L_shoulder_2 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send L_shoulder_2 setpoint=%.3f", logvalue);
 					break;
 				case joint::L_elbow_1:
 					message_forSent->header = joint::L_elbow_1;
-					message_forSent->value = 103;
+					message_forSent->value = samples + 3000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "L_elbow_1 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send L_elbow_1 setpoint=%.3f", logvalue);
 					break;
 				case joint::L_elbow_2:
 					message_forSent->header = joint::L_elbow_2;
-					message_forSent->value = 104;
+					message_forSent->value = samples + 4000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "L_elbow_2 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send L_elbow_2 setpoint=%.3f", logvalue);
 					break;
 				case joint::L_forearm:
 					message_forSent->header = joint::L_forearm;
-					message_forSent->value = 105;
+					message_forSent->value = samples + 5000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "L_forearm setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send L_forearm setpoint=%.3f", logvalue);
 					break;
 				case joint::R_shoulder_1:
 					message_forSent->header = joint::R_shoulder_1;
-					message_forSent->value = 106;
+					message_forSent->value = samples + 6000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "R_shoulder_1 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send R_shoulder_1 setpoint=%.3f", logvalue);
 					break;
 				case joint::R_shoulder_2:
 					message_forSent->header = joint::R_shoulder_2;
-					message_forSent->value = 107;
+					message_forSent->value = samples + 7000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "R_shoulder_2 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send R_shoulder_2 setpoint=%.3f", logvalue);
 					break;
 				case joint::R_elbow_1:
 					message_forSent->header = joint::R_elbow_1;
-					message_forSent->value = 108;
+					message_forSent->value = samples + 8000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "R_elbow_1 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send R_elbow_1 setpoint=%.3f", logvalue);
 					break;
 				case joint::R_elbow_2:
 					message_forSent->header = joint::R_elbow_2;
-					message_forSent->value = 109;
+					message_forSent->value = samples + 9000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "R_elbow_2 setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send R_elbow_2 setpoint=%.3f", logvalue);
 					break;
 				case joint::R_forearm:
 					message_forSent->header = joint::R_forearm;
-					message_forSent->value = 110;
+					message_forSent->value = samples + 10000;
 					logvalue = message_forSent->value;
-					CsvLogger->Log("testCpp.cpp", "main", "R_forearm setpoint=%.3f", logvalue);
+					CsvLogger->Log("testCpp.cpp", "main", "send R_forearm setpoint=%.3f", logvalue);
 					break;
 				default:
 					break;
@@ -272,12 +273,14 @@ int main()
 
 				// Send SETPOINTS to ROBOT
 				SendResult = TcpClient->Send(message_forSent);
-				if (!SendResult) { printf("Can not send test message to the server"); }
-				else { print_message("%d. Sent Setpoint Message to ROBOT: %s,%d\n", message_forSent); }
+				
+				//if (!SendResult) { printf("Can not send test message to the server"); }
+				//else { print_message("%d. Sent Setpoint Message to ROBOT: %s,%d\n", message_forSent); }
 			}
+			samples++;
 		}
 
-		samples++;
+		
 	  } while (samples<100);
 
 	delete CsvLogger;
