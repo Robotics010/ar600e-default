@@ -78,8 +78,8 @@ Module TCPServer_class
             Console.WriteLine("TCPServer:Connected!")
             Disconnect = False
             stream = client.GetStream()
-            stream.ReadTimeout = 10
-            'stream.WriteTimeout = 100
+            stream.ReadTimeout = 1
+            stream.WriteTimeout = 1
         End Sub
 
         Private Function SerializeMessageObject(ByVal msg As Message) As Byte()
@@ -112,11 +112,11 @@ Module TCPServer_class
                 i = stream.Read(bytes, 0, MSG_SIZE)
             Catch ex As IOException
                 i = 0
-                Console.WriteLine("TCPServer:IOException in Read")
+                'Console.WriteLine("TCPServer:IOException in Read")
                 Result = False
             End Try
             If (i <> 0) Then
-                Console.WriteLine("TCPServer:Read True")
+                'Console.WriteLine("TCPServer:Read True")
                 Rmessage = DeserializeMessageObject(bytes)
                 Result = True
             End If

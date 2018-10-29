@@ -1073,8 +1073,8 @@ Public Class Form1
             IsMessageReceived = TCPServer.Read()
             If IsMessageReceived Then
                 Receivedmessage = TCPServer.GetReceivedMessage()
-                tb_header.Text = Receivedmessage.header
-                tb_value.Text = Receivedmessage.value
+                'tb_header.Text = Receivedmessage.header
+                'tb_value.Text = Receivedmessage.value
                 ' Process Received Message
                 Select Case Receivedmessage.header
                     Case JointType.L_shoulder_1

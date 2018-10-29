@@ -108,7 +108,7 @@ int __cdecl main(int argc, char **argv)
 
 	// ROS-WINDOWS-CONNECTOR PUBLISHER INIT and CONNECT to ROS
 	ros::NodeHandle nh;
-	char *ros_master = "192.169.1.3";
+	char *ros_master = "192.168.1.3";
 	printf("Connecting to server at %s\n", ros_master);
 	
 	nh.initNode(ros_master);
@@ -294,7 +294,7 @@ int __cdecl main(int argc, char **argv)
 		finish = clock();
 		duration = (double)(finish - start) / CLOCKS_PER_SEC;
 		// Send Joint Setpoint Position to a Robot
-		if (duration > 1)
+		if (duration > 0.1)
 		{
 			start = clock();
 			for (int i = 0; i < 10; i++)
