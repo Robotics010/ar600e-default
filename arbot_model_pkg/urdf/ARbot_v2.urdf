@@ -15,7 +15,7 @@
     <visual>
      <origin rpy="0 0 0" xyz="0 0 0.8275" />
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/taz.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/taz.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <material name="white"/>
 
@@ -28,7 +28,7 @@
   <link name="sh_bedro_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -38,7 +38,7 @@
   <link name="sh_bedro1_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -48,7 +48,7 @@
   <link name="kr_bedro_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -58,7 +58,7 @@
   <link name="bedro_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.28"/>
       <material name="blue"/>
@@ -68,7 +68,7 @@
   <link name="koleno_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -78,7 +78,7 @@
   <link name="golen_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.28"/>
       <material name="blue"/>
@@ -88,7 +88,7 @@
   <link name="kr_stopa_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -98,7 +98,7 @@
   <link name="stopa_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.1055"/>
       <material name="blue"/>
@@ -111,7 +111,7 @@
   <link name="sh_tors">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="-3.141592654 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -121,7 +121,7 @@
   <link name="tors">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/tors.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/tors.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 3.141592654 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -134,7 +134,7 @@
   <link name="sh_plecho_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="red"/>
@@ -144,7 +144,7 @@
   <link name="plecho_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -154,7 +154,7 @@
   <link name="sh_plecho1_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="red"/>
@@ -164,7 +164,7 @@
   <link name="lokot_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -174,7 +174,7 @@
   <link name="sh_lokot_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -184,7 +184,7 @@
   <link name="sh_lokot1_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -194,7 +194,7 @@
   <link name="sh_predpl_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -204,7 +204,7 @@
   <link name="predpl_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -214,7 +214,7 @@
   <link name="sh_kist_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -224,7 +224,7 @@
   <link name="kist_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -237,7 +237,7 @@
   <link name="sh_bedro_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -247,7 +247,7 @@
   <link name="sh_bedro1_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -257,7 +257,7 @@
   <link name="kr_bedro_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -267,7 +267,7 @@
   <link name="bedro_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/bedro.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.28"/>
       <material name="blue"/>
@@ -277,7 +277,7 @@
   <link name="koleno_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -287,7 +287,7 @@
   <link name="golen_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/golen.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.28"/>
       <material name="blue"/>
@@ -297,7 +297,7 @@
   <link name="kr_stopa_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -307,7 +307,7 @@
   <link name="stopa_l">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/stopa.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.1055"/>
       <material name="blue"/>
@@ -320,7 +320,7 @@
   <link name="sh_plecho_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model11.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="red"/>
@@ -330,7 +330,7 @@
   <link name="plecho_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -340,7 +340,7 @@
   <link name="sh_plecho1_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="red"/>
@@ -350,7 +350,7 @@
   <link name="lokot_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -360,7 +360,7 @@
   <link name="sh_lokot_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="red"/>
@@ -370,7 +370,7 @@
   <link name="sh_lokot1_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model6.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -380,7 +380,7 @@
   <link name="sh_predpl_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -390,7 +390,7 @@
   <link name="predpl_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model13.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -400,7 +400,7 @@
   <link name="sh_kist_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model7.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -410,7 +410,7 @@
   <link name="kist_r">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/kist.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -423,7 +423,7 @@
   <link name="sh_golova_n">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/koleno.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -433,7 +433,7 @@
   <link name="golova_n">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golovan.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/golovan.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
@@ -443,7 +443,7 @@
   <link name="sh_sheya">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/sheya.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/sheya.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -453,7 +453,7 @@
   <link name="sheya">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model10.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 1.570796 1.570796" xyz="0 0 0"/>
       <material name="blue"/>
@@ -463,7 +463,7 @@
   <link name="kr_golova">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/model2.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -473,7 +473,7 @@
   <link name="golova">
     <visual>
       <geometry>
-               <mesh filename="file:////home/vladimir/catkin_ws/src/ar600-start/src/arbot_model_pkg/meshes/STL/golova.stl" scale="0.001 0.001 0.001"/>       
+               <mesh filename="package://arbot_model_pkg/meshes/STL/golova.stl" scale="0.001 0.001 0.001"/>       
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
