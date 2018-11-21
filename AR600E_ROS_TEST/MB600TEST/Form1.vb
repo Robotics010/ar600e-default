@@ -1067,21 +1067,21 @@ Public Class Form1
 
     Private Sub TCPTimer_Tick(sender As Object, e As EventArgs) Handles TCPTimer.Tick
         ' Read and Process all TCP Messages from Client
-        Do ' Read All Messages from Client
+        For index As Integer = 1 To 10 ' Read 10 TCP messages
             ' Catch the IOException generated if the 
             ' read timeout.
             IsMessageReceived = TCPServer.Read()
             If IsMessageReceived Then
                 Receivedmessage = TCPServer.GetReceivedMessage()
-                tb_header.Text = Receivedmessage.header
-                tb_value.Text = Receivedmessage.value
+                'tb_header.Text = Receivedmessage.header
+                'tb_value.Text = Receivedmessage.value
                 ' Process Received Message
-                Select Receivedmessage.header
+                Select Case Receivedmessage.header
                     Case JointType.L_shoulder_1
                         st_l_shoulder1.Text = Receivedmessage.value
-                        Debug.Print(String.Format("{0}) Receivedmessage TCPTimer.Tick Event: st_l_shoulder1.Text = Receivedmessage.value", dbg_ind))
-                        Debug.Print(String.Format("{0}) Receivedmessage.value = {1}, st_l_shoulder1.Text = {2}", dbg_ind, Receivedmessage.value, st_l_shoulder1.Text))
-                        dbg_ind += 1
+                        'Debug.Print(String.Format("{0}) Receivedmessage TCPTimer.Tick Event: st_l_shoulder1.Text = Receivedmessage.value", dbg_ind))
+                        'Debug.Print(String.Format("{0}) Receivedmessage.value = {1}, st_l_shoulder1.Text = {2}", dbg_ind, Receivedmessage.value, st_l_shoulder1.Text))
+                        'dbg_ind += 1
                     Case JointType.L_shoulder_2
                         st_l_shoulder2.Text = Receivedmessage.value
                     Case JointType.L_elbow_1
@@ -1104,7 +1104,7 @@ Public Class Form1
                         'Debug.WriteLine("Not between 1 and 10, inclusive")
                 End Select
             End If
-        Loop Until (Not IsMessageReceived) Or TCPServer.IsDisconnected()
+        Next
 
         ' Write Joint Setpoints TO Robot
         'chbx_SendSetpoint.Checked
@@ -1123,12 +1123,12 @@ Public Class Form1
             NOMB.Value = 36
             Nom_Joint = arrNomb_joint(NOMB.Value)
             Dim pos As Integer = Convert.ToInt32(st_l_shoulder1.Text) * Nomb_Revers(NOMB.Value)
-            Debug.Print(String.Format("{0}) Write Joint Setpoints TO Robot TCPTimer.Tick Event: Dim pos As Integer = Convert.ToInt32(st_l_shoulder1.Text) * Nomb_Revers(NOMB.Value)", dbg_ind))
-            Debug.Print(String.Format("{0}) NOMB.Value = {1}, Nomb_Revers(NOMB.Value) = {2}, Convert.ToInt32(st_l_shoulder1.Text) ={3}, pos = {4}", dbg_ind, NOMB.Value, Nomb_Revers(NOMB.Value), Convert.ToInt32(st_l_shoulder1.Text), pos))
+            ''Debug.Print(String.Format("{0}) Write Joint Setpoints TO Robot TCPTimer.Tick Event: Dim pos As Integer = Convert.ToInt32(st_l_shoulder1.Text) * Nomb_Revers(NOMB.Value)", dbg_ind))
+            ''Debug.Print(String.Format("{0}) NOMB.Value = {1}, Nomb_Revers(NOMB.Value) = {2}, Convert.ToInt32(st_l_shoulder1.Text) ={3}, pos = {4}", dbg_ind, NOMB.Value, Nomb_Revers(NOMB.Value), Convert.ToInt32(st_l_shoulder1.Text), pos))
             MB.ANGLE(Nom_Joint) = pos
-            Debug.Print(String.Format("{0}) MB.ANGLE(Nom_Joint) = pos", dbg_ind))
-            Debug.Print(String.Format("{0}) Nom_Joint = {1}, pos = {2}", dbg_ind, Nom_Joint, pos))
-            dbg_ind += 1
+            ''Debug.Print(String.Format("{0}) MB.ANGLE(Nom_Joint) = pos", dbg_ind))
+            ''Debug.Print(String.Format("{0}) Nom_Joint = {1}, pos = {2}", dbg_ind, Nom_Joint, pos))
+            ''dbg_ind += 1
 
             'NombValue = 35 ' l_shoulder2
             'Nom_Joint = arrNomb_joint(NombValue)
@@ -1249,8 +1249,8 @@ Public Class Form1
     Private Sub btn_TCP_Start_Click(sender As Object, e As EventArgs) Handles btn_TCP_Start.Click
         NOMB.Value = 36
         Nom_Joint = arrNomb_joint(NOMB.Value)
-        Debug.Print(String.Format("{0}) btn_TCP_Start.Click Event: Nom_Joint = arrNomb_joint(NOMB.Value)", dbg_ind))
-        Debug.Print(String.Format("{0}) Nom_Joint = {1}, NOMB.Value = {2}, arrNomb_joint(NOMB.Value) = {3}", dbg_ind, Nom_Joint, NOMB.Value, arrNomb_joint(NOMB.Value)))
+        'Debug.Print(String.Format("{0}) btn_TCP_Start.Click Event: Nom_Joint = arrNomb_joint(NOMB.Value)", dbg_ind))
+        'Debug.Print(String.Format("{0}) Nom_Joint = {1}, NOMB.Value = {2}, arrNomb_joint(NOMB.Value) = {3}", dbg_ind, Nom_Joint, NOMB.Value, arrNomb_joint(NOMB.Value)))
         tbPOSMIN.Text = MB.POSMIN(Nom_Joint)
         tbPOSMAX.Text = MB.POSMAX(Nom_Joint)
         TbDAMP.Text = MB.DAMP(Nom_Joint)
@@ -1260,15 +1260,15 @@ Public Class Form1
         lblUBATT.Text = (MB.UBATT(Nom_Joint) / 100).ToString("F01")
 
         MB.ANGLE(Nom_Joint) = MB.CPOS(Nom_Joint)
-        Debug.Print(String.Format("{0}) MB.ANGLE(Nom_Joint) = MB.CPOS(Nom_Joint)", dbg_ind))
-        Debug.Print(String.Format("{0}) Nom_Joint = {1}, MB.CPOS(Nom_Joint) = {2}", dbg_ind, Nom_Joint, MB.CPOS(Nom_Joint)))
+        'Debug.Print(String.Format("{0}) MB.ANGLE(Nom_Joint) = MB.CPOS(Nom_Joint)", dbg_ind))
+        'Debug.Print(String.Format("{0}) Nom_Joint = {1}, MB.CPOS(Nom_Joint) = {2}", dbg_ind, Nom_Joint, MB.CPOS(Nom_Joint)))
         TrackBar1.Value = MB.CPOS(Nom_Joint) * Nomb_Revers(NOMB.Value)
-        Debug.Print(String.Format("{0}) TrackBar1.Value = MB.CPOS(Nom_Joint) * Nomb_Revers(NOMB.Value)", dbg_ind))
-        Debug.Print(String.Format("{0}) Nom_Joint = {1}, MB.CPOS(Nom_Joint) = {2}, NOMB.Value = {3}, Nomb_Revers(NOMB.Value) = {4}, TrackBar1.Value = {5}", dbg_ind, Nom_Joint, MB.CPOS(Nom_Joint), NOMB.Value, Nomb_Revers(NOMB.Value), TrackBar1.Value))
+        'Debug.Print(String.Format("{0}) TrackBar1.Value = MB.CPOS(Nom_Joint) * Nomb_Revers(NOMB.Value)", dbg_ind))
+        'Debug.Print(String.Format("{0}) Nom_Joint = {1}, MB.CPOS(Nom_Joint) = {2}, NOMB.Value = {3}, Nomb_Revers(NOMB.Value) = {4}, TrackBar1.Value = {5}", dbg_ind, Nom_Joint, MB.CPOS(Nom_Joint), NOMB.Value, Nomb_Revers(NOMB.Value), TrackBar1.Value))
         MB.MOT_TRACE(Nom_Joint)
-        Debug.Print(String.Format("{0}) MB.MOT_TRACE(Nom_Joint)", dbg_ind))
-        Debug.Print(String.Format("{0}) Nom_Joint = {1}", dbg_ind, Nom_Joint))
-        dbg_ind += 1
+        'Debug.Print(String.Format("{0}) MB.MOT_TRACE(Nom_Joint)", dbg_ind))
+        'Debug.Print(String.Format("{0}) Nom_Joint = {1}", dbg_ind, Nom_Joint))
+        'dbg_ind += 1
         ' Block execution and wait for TCP Client
         TCPServer.WaitForClient()
 
